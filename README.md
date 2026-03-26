@@ -2,6 +2,8 @@
 
 A sleek concert-style marquee display application built with Vue 3 and Lynx. Create eye-catching scrolling text with customizable themes and animation speeds.
 
+<img width="1268" height="911" alt="image" src="https://github.com/user-attachments/assets/4928b3ec-8e36-4c12-b487-5f50d671d921" />
+
 ## Features
 
 - **Custom Themes**: Three pre-built themes - Concert (red), Neon (cyan), and Sunset (orange)
