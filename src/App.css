@@ -82,14 +82,14 @@
   font-size: 120rpx;
   font-weight: bold;
   animation: marquee 10s linear infinite;
-  transform: rotate(180deg);
+  transform: rotate(90deg);
 }
 
 @keyframes marquee {
   0% {
-    transform: translateY(-100%);
+    transform: rotate(90deg) translateY(-100%);
   }
   100% {
-    transform: translateY(100vh);
+    transform: rotate(90deg) translateY(100vh);
   }
 }
