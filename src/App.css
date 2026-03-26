@@ -64,6 +64,7 @@
 
 /* Display Screen Styles */
 .display-screen {
+  width: 100vw;
   min-height: 100vh;
   background-color: #000;
   display: flex;
@@ -72,24 +73,23 @@
 }
 
 .marquee-container {
-  width: 100%;
+  height: 100%;
   overflow: hidden;
-  white-space: nowrap;
 }
 
 .marquee-text {
   color: #ff0000;
   font-size: 120rpx;
   font-weight: bold;
-  display: inline-block;
   animation: marquee 10s linear infinite;
+  transform: rotate(180deg);
 }
 
 @keyframes marquee {
   0% {
-    transform: translateX(100%);
+    transform: translateY(-100%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateY(100vh);
   }
 }
