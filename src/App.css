@@ -50,6 +50,35 @@
   padding: 20rpx;
 }
 
+.theme-selector {
+  display: flex;
+  flex-direction: row;
+  gap: 20rpx;
+  margin-bottom: 60rpx;
+}
+
+.theme-circle {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4rpx solid transparent;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.3);
+}
+
+.theme-circle--selected {
+  border: 4rpx solid #fff;
+  box-shadow: 0 0 20rpx rgba(255, 255, 255, 0.5);
+}
+
+.theme-dot {
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+}
+
 .display-button {
   background-color: #ff0000;
   padding: 30rpx 80rpx;
@@ -75,21 +104,20 @@
 .marquee-container {
   height: 100%;
   overflow: hidden;
+  transform: rotate(0deg);
 }
 
 .marquee-text {
-  color: #ff0000;
   font-size: 120rpx;
   font-weight: bold;
   animation: marquee 10s linear infinite;
-  transform: rotate(90deg);
 }
 
 @keyframes marquee {
   0% {
-    transform: rotate(90deg) translateY(-100%);
+    transform: rotate(90deg) translateX(-100%);
   }
   100% {
-    transform: rotate(90deg) translateY(100vh);
+    transform: rotate(90deg) translateX(100vh);
   }
 }
