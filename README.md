@@ -48,6 +48,18 @@ npm run build
 npm run preview
 ```
 
+## View Demo with Lynx Explorer
+
+You can view the demo without running a local development server:
+
+1. **Download Lynx Explorer** from the [Lynx Quick Start Guide](https://lynxjs.org/rspeedy/start/quick-start?ios-simulator-platform=macos-arm64&explorer-platform=ios-simulator#prepare-lynx-explorer)
+
+2. **Open Lynx Explorer** and paste this bundle URL:
+
+```
+https://github.com/jonathanfilbert/vue-lynx-concert-marquee/raw/refs/heads/main/dist/main.lynx.bundle
+```
+
 ## Scripts
 
 | Command | Description |

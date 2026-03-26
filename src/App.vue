@@ -65,6 +65,18 @@ function goToEntry() {
 function selectTheme(index: number) {
   selectedThemeIndex.value = index
 }
+
+function increaseSpeed() {
+  if (marqueeSpeed.value < 10) {
+    marqueeSpeed.value++
+  }
+}
+
+function decreaseSpeed() {
+  if (marqueeSpeed.value > 3) {
+    marqueeSpeed.value--
+  }
+}
 </script>
 
 <template>
