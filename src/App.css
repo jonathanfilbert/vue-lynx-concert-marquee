@@ -106,8 +106,6 @@
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 100%;
 }
 
 .marquee-text {
@@ -118,9 +116,9 @@
 
 @keyframes marquee {
   0% {
-    transform: translateX(calc(50vw)) rotate(90deg) translateY(-50%);
+    transform: translateX(-100%);
   }
   100% {
-    transform: translateX(calc(50vw)) rotate(90deg) translateY(100%);
+    transform: translateX(100%);
   }
 }
