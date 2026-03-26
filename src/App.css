@@ -79,6 +79,37 @@
   border-radius: 50%;
 }
 
+.speed-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60rpx;
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 20rpx;
+  margin-top: 20rpx;
+}
+
+.stepper-button {
+  color: #fff;
+  font-size: 48rpx;
+  font-weight: bold;
+  padding: 20rpx 40rpx;
+  background-color: #1a1a1a;
+  border-radius: 10rpx;
+}
+
+.stepper-value {
+  font-size: 36rpx;
+  font-weight: bold;
+  padding: 20rpx 40rpx;
+  background-color: #1a1a1a;
+  border-radius: 10rpx;
+}
+
 .display-button {
   background-color: #ff0000;
   padding: 30rpx 80rpx;
@@ -106,12 +137,13 @@
   overflow: hidden;
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 .marquee-text {
   font-size: 240rpx;
   font-weight: bold;
-  animation: marquee 10s linear infinite;
+  animation: marquee 5s linear infinite;
 }
 
 @keyframes marquee {
@@ -119,6 +151,6 @@
     transform: translateX(-100%);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(300%);
   }
 }

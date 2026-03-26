@@ -1,0 +1,31 @@
+{
+  "name": "vue-example",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "rspeedy build",
+    "dev": "rspeedy dev",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "preview": "rspeedy preview"
+  },
+  "dependencies": {
+    "vue": "^3.5.0",
+    "vue-lynx": "0.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@lynx-js/qrcode-rsbuild-plugin": "^0.4.6",
+    "@lynx-js/rspeedy": "^0.13.5",
+    "@rsbuild/plugin-vue": "^1.2.6",
+    "eslint": "^9.39.4",
+    "globals": "^17.4.0",
+    "prettier": "^3.8.1",
+    "typescript": "^5.0.0",
+    "typescript-eslint": "^8.56.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "private": true
+}
