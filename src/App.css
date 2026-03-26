@@ -108,7 +108,7 @@
 }
 
 .marquee-text {
-  font-size: 120rpx;
+  font-size: 240rpx;
   font-weight: bold;
   animation: marquee 10s linear infinite;
 }
