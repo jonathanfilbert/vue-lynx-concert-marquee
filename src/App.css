@@ -102,9 +102,12 @@
 }
 
 .marquee-container {
-  height: 100%;
+  width: 100%;
   overflow: hidden;
-  transform: rotate(0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .marquee-text {
@@ -115,9 +118,9 @@
 
 @keyframes marquee {
   0% {
-    transform: rotate(90deg) translateX(-100%);
+    transform: translateX(calc(50vw)) rotate(90deg) translateY(-50%);
   }
   100% {
-    transform: rotate(90deg) translateX(100vh);
+    transform: translateX(calc(50vw)) rotate(90deg) translateY(100%);
   }
 }
